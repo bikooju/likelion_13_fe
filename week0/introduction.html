@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My profile</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        color: #1c1c1c;
+      }
+
+      .header {
+        background-color: #66fd96;
+        text-align: center;
+        padding: 20px;
+      }
+      .nav {
+        background-color: #1c1c1c;
+        padding: 10px;
+        text-align: center;
+      }
+      .nav ul {
+        list-style: none;
+        padding: 0;
+      }
+      .nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+      .nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .nav ul li a:hover {
+        color: #66fd96;
+      }
+      .main {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+      }
+      .section {
+        margin-bottom: 50px;
+      }
+      .img {
+        width: 500px;
+        height: auto;
+        border-radius: 10px;
+      }
+      .footer {
+        text-align: center;
+        padding: 10px;
+        background: #1c1c1c;
+        color: white;
+      }
+      @media (max-width: 768px) {
+        body {
+          font-size: 14px;
+        }
+        .nav ul li {
+          display: block;
+          margin: 10px 0;
+        }
+        .main {
+          padding: 10px;
+        }
+        .header,
+        .footer {
+          padding: 15px;
+        }
+        .img {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>My Profile</h1>
+      <p>나만의 웹사이트를 만들어봐요!</p>
+    </header>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="#about">자기소개</a></li>
+        <li><a href="#features">관심사</a></li>
+        <li><a href="#contact">연락하기</a></li>
+        <li>
+          <a href="https://skulikelion.com" target="_blank"
+            >서경대 멋사 사이트 바로가기</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <section id="about" class="section">
+        <h2>안녕하세요</h2>
+        <p>함께 즐거운 동아리 생활 보내봐요</p>
+        <img
+          src="https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/eViY/image/is3UFbmo7Gwuiln43EznmVZFwXo.jpg"
+          alt="about_image"
+        />
+      </section>
+      <section id="features" class="section">
+        <h3>취미</h3>
+        <ul>
+          <li>농구 보기</li>
+          <li>음악 감상</li>
+          <li>기타 치기</li>
+          <li>코딩 ^^</li>
+        </ul>
+        <img
+          src="https://i.ytimg.com/vi/dIt_N7yNTgk/mqdefault.jpg"
+          alt="guitar_image"
+        />
+
+        <h3>좋아하는 음식 순위</h3>
+        <ol>
+          <li>타코</li>
+          <li>떡볶이</li>
+          <li>햄버거</li>
+        </ol>
+        <img
+          src="https://i.pinimg.com/474x/7a/9e/ec/7a9eec73158b3e0a84691551180fef8e.jpg"
+          alt="hamburger_image"
+        />
+      </section>
+      <section id="contact" class="section">
+        <h2>연락하기</h2>
+        <p>이메일: example@example.com</p>
+        <p>전화번호: 010-1234-5678</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025. SKU LIKELION. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
