@@ -1,12 +1,13 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import StyledButton from "../week2/StyledButton";
-import Profile from "../week2/App_profile";
-import CountUp from "../week2/countup";
-import App from "../week2/TodoList/App";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AppRoutes from "../routes/AppRoutes";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+const root = document.getElementById("root");
+
+ReactDOM.createRoot(root).render(
+  <BrowserRouter>
+    <AppRoutes />
+  </BrowserRouter>
 );
