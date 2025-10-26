@@ -2,23 +2,20 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import styled from "styled-components";
 
-const NAME_KEY = "profile.name";
-const PHOTO_KEY = "profile.photo";
-
 export default function AccountSettings() {
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const [photo, setPhoto] = useState("");
 
   useEffect(() => {
-    setName(localStorage.getItem(NAME_KEY) || "");
-    setPhoto(localStorage.getItem(PHOTO_KEY) || "");
+    setName(localStorage.getItem("account::name") || "");
+    setPhoto(localStorage.getItem("account::photo") || "");
   }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    localStorage.setItem(NAME_KEY, name.trim() || "사용자");
-    localStorage.setItem(PHOTO_KEY, photo.trim());
+    localStorage.setItem("account::name", name.trim() || "사용자");
+    localStorage.setItem("account::photo", photo.trim());
     navigate("/account");
   };
 

@@ -7,6 +7,9 @@ import Search from "../pages/Search.jsx";
 import AccountHome from "../pages/AccountHome.jsx";
 import AccountSettings from "../pages/AccountSettings.jsx";
 
+{
+  /*멋사 검색 및 프로필 실습 Routes*/
+}
 function AppRoutes() {
   return (
     <Routes>

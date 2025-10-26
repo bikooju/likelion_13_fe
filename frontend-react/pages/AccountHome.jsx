@@ -2,16 +2,13 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router";
 
-const NAME_KEY = "profile.name";
-const PHOTO_KEY = "profile.photo";
-
 export default function AccountHome() {
   const [name, setName] = useState("사용자");
   const [photo, setPhoto] = useState("");
 
   useEffect(() => {
-    const savedName = localStorage.getItem(NAME_KEY);
-    const savedPhoto = localStorage.getItem(PHOTO_KEY);
+    const savedName = localStorage.getItem("account::name");
+    const savedPhoto = localStorage.getItem("account::photo");
     if (savedName) setName(savedName);
     if (savedPhoto) setPhoto(savedPhoto);
   }, []);
